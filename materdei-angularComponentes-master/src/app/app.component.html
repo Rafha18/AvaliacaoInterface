@@ -1,0 +1,7 @@
+<!-- <router-outlet></router-outlet> -->
+
+<app-lista *ngIf="listaAberta" (editarCadastro)="abreCadastro($event)" (novoCadastro)="novoCadastro()">
+</app-lista>
+
+<app-formulario *ngIf="cadastroAberto" [pessoa]="pessoa" (close)="fechaCadastro()">
+</app-formulario>

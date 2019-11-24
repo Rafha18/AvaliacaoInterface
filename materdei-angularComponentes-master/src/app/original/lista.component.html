@@ -1,0 +1,55 @@
+ <nav>
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo">BUSINESS GROUP</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    >>FAÇA PARTE DA NOSSA EQUIPE!<< </ul> </div> </nav> <div class="container">
+    <div class="card">
+
+       
+                    <h5 class="center-align">CADASTRO DE CURRÍCULO
+                        </h5>
+                        <div class="right-align">
+                            <button mz-button (click)="novo()">
+                                NOVO CADASTRO
+                            </button>
+                        </div>
+                        <mz-collection>
+                            <mz-collection-item *ngFor="let pessoa of pessoaList">
+                                {{pessoa.nome}} {{pessoa.sobrenome}}
+
+                                <a mz-secondary-content (click)="editar(pessoa)">
+                                    <i class="material-icons" style="cursor: pointer;">
+                                        ENVIAR
+                                    </i>
+                                </a>
+                            </mz-collection-item>
+                        </mz-collection>
+
+            </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">BUSINESS GROUP</h5>
+                    <p class="grey-text text-lighten-4">Trabalhe em uma empresa com anos de mercado, e tenha uma
+                        carreira promissora!.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">CONTATOS</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">SAC: 0800-999999</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">RH: (46)3220-0001</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">E-MAIL: RH@BUSINESSGROUP.COM.BR</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © AVALIACAO INTERFACE RAFAEL QUADRA 2019
+                <a class="grey-text text-lighten-4 right" href="#!">6º Período</a>
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,291 @@
+<nav>
+        <div class="nav-wrapper">
+            <a href="" class="brand-logo">BUSINESS GROUP</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                >>FAÇA PARTE DA NOSSA EQUIPE!<< </ul> </div> </nav><div class="container">
+     <div class="card">
+
+                    <div class="card-content"></div>
+                    <form>
+                        <h5 class="center-align">CADASTRO DE CURRÍCULO</h5>
+
+                        <mz-collapsible [mode]="'expandable'">
+                            <!-- Dados Pessoais -->
+                            <mz-collapsible-item [active]="true">
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        people_alt
+                                    </i>
+                                    <span class="vertical-align-super">DADOS PESSOAIS</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <div class="row">
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="nome" name="nome" type="text" [label]="'Nome'"
+                                                length="60" [(ngModel)]="pessoa.nome" />
+                                        </mz-input-container>
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="sobrenome" name="sobrenome" type="text"
+                                                [label]="'Sobrenome'" length="60" [(ngModel)]="pessoa.sobrenome" />
+                                        </mz-input-container>
+                                    </div>
+                                    <div class="row">
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="email" name="email" type="text" [label]="'E-mail'"
+                                                length="60" [(ngModel)]="pessoa.email" />
+                                        </mz-input-container>
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="Telefone" name="Telefone" type="text"
+                                                [label]="'Telefone'" length="60" [(ngModel)]="pessoa.telefone" />
+                                        </mz-input-container>
+                                    </div>
+                                    <div class="row">
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="Celular" name="Celular" type="text"
+                                                [label]="'Telefone Celular (Não Obrigatório)'" length="60"
+                                                [(ngModel)]="pessoa.celular" />
+                                        </mz-input-container>
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="linkedin" name="linkedin" type="text"
+                                                [label]="'URL Linkedin'" length="60" [(ngModel)]="pessoa.linkedin" />
+                                        </mz-input-container>
+                                    </div>
+                                    <!-- GENERO -->
+                                    <mz-collapsible-item-header>
+                                        <i class="material-icons">
+                                            wc
+                                        </i>
+                                        <span class="vertical-align-super"> * GÊNERO:</span>
+                                    </mz-collapsible-item-header>
+
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <mz-radio-button-container class="col s6 m4">
+                                                <input mz-radio-button [label]="'Masculino'" [withGap]="true"
+                                                    id="radio-button-id2" name="radio-group" type="radio"
+                                                    value="Masculino" [(ngModel)]="pessoa.genero">
+                                            </mz-radio-button-container>
+
+                                            <mz-radio-button-container class="col s6 m4">
+                                                <input mz-radio-button [label]="'Feminino'" [withGap]="true"
+                                                    id="radio-button-id" name="radio-group" type="radio"
+                                                    value="Feminino" [(ngModel)]="pessoa.genero">
+                                            </mz-radio-button-container>
+                                        </div>
+                                    </div>
+
+                                    <!--INFORMAÇÕES CONJUGAIS-->
+
+                                    <mz-collapsible-item-header>
+                                        <i class="material-icons">
+                                            face
+                                        </i>
+                                        <span class="vertical-align-super"> * INFORMAÇÕES CONJUGAIS:</span>
+                                    </mz-collapsible-item-header>
+
+                                    <div class="row">
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="estadocivil" name="estadocivil" type="text"
+                                                [label]="'Qual Seu Estado Civil Atual?'" length="60"
+                                                [(ngModel)]="pessoa.estadocivil" />
+                                        </mz-input-container>
+                                    </div>
+                                    <div class="row">
+                                        <mz-input-container class="col s12 m6">
+                                            <input mz-input id="filhos" name="filhos" type="text"
+                                                [label]="'Possue Filhos? (SIM) (NÃO)'" length="60"
+                                                [(ngModel)]="pessoa.filhos" />
+                                        </mz-input-container>
+                                    </div>
+
+
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+
+                            <!-- ENDEREÇO -->
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        add_location
+                                    </i>
+                                    <span class="vertical-align-super">ENDEREÇO:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-input-container class="col s12 m6">
+                                        <input mz-input id="rua" name="rua" type="text" [label]="'Rua'" length="60"
+                                            [(ngModel)]="pessoa.rua" />
+                                    </mz-input-container>
+                                    <mz-input-container class="col s12 m6">
+                                        <input mz-input id="numero" name="numero" type="text"
+                                            [label]="'Número Residencial'" length="9" [(ngModel)]="pessoa.numero" />
+                                    </mz-input-container>
+                                    <mz-input-container class="col s12 m6">
+                                        <input mz-input id="bairro" name="bairro" type="text" [label]="'Bairro'"
+                                            length="20" [(ngModel)]="pessoa.bairro" />
+                                    </mz-input-container>
+                                    <mz-input-container class="col s12 m6">
+                                        <input mz-input id="cep" name="cep" type="text"
+                                            [label]="'CEP (Somente Números)'" length="8"
+                                            [(ngModel)]="pessoa.sobrenome" />
+                                    </mz-input-container>
+                                    <mz-input-container class="col s12 m6">
+                                        <input mz-input id="cidade" name="cidade" type="text" [label]="'Cidade'"
+                                            length="60" [(ngModel)]="pessoa.cidade" />
+                                    </mz-input-container>
+                                    <mz-input-container class="col s12 m6">
+                                        <input mz-input id="complemento" name="complemento" type="text"
+                                            [label]="'Informações Complementares (Ex. CASA, APARTAMENTO, ESCRITÓRIO)'"
+                                            length="60" [(ngModel)]="pessoa.complementar" />
+                                    </mz-input-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+                            <!--FORMAÇÃO -->
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        school
+                                    </i>
+                                    <span class="vertical-align-super">FORMAÇÃO:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-textarea-container>
+                                        <textarea mz-textarea name="formacao"
+                                            [label]="'Qual o Grau de Sua Formação? (Preencha de Forma Clara e Objetiva!):'"
+                                            id="formacao" length="900" [(ngModel)]="pessoa.formacao"></textarea>
+                                    </mz-textarea-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+                            <!--Experiencia-->
+
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        done_all
+                                    </i>
+                                    <span class="vertical-align-super">EXPERIÊNCIA PROFISSIONAL:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-textarea-container>
+                                        <textarea mz-textarea name="experiencia"
+                                            [label]="'Qual as Suas Experiências Profissionais? (Insira as Respectivas Datas!)'"
+                                            id="experiencia" length="900" [(ngModel)]="pessoa.experiencia"></textarea>
+                                    </mz-textarea-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+                            <!--Experiencia-->
+
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        add_to_photos
+                                    </i>
+                                    <span class="vertical-align-super">QUALIFICAÇÕES E ATIVIDADES PROFISSIONAIS:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-textarea-container>
+                                        <textarea mz-textarea name="qualificacoes"
+                                            [label]="'Liste Suas Qualificações, Cursos e Atividades Profissionais: (Insira as Respectivas Datas!)'"
+                                            id="qualificacoes" length="900"
+                                            [(ngModel)]="pessoa.qualificacoes"></textarea>
+                                    </mz-textarea-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+                            <!--Habilidades-->
+
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        exposure_plus_2
+                                    </i>
+                                    <span class="vertical-align-super">HABILIDADES E COMPETÊNCIAS:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-textarea-container>
+                                        <textarea mz-textarea name="habilidades"
+                                            [label]="'Descreva Suas Principais Habilidades e Competências:'"
+                                            id="habilidades" length="900" [(ngModel)]="pessoa.habilidades"></textarea>
+                                    </mz-textarea-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+                            <!--Idiomas-->
+
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        flight_takeoff
+                                    </i>
+                                    <span class="vertical-align-super">IDIOMAS:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-textarea-container>
+                                        <textarea mz-textarea name="idiomas"
+                                            [label]="'Qual o Seu Nivel de Conhecimento em Outros Idiomas?(Ex: INGLÊS, BÁSICO)'"
+                                            id="idiomas" length="100" [(ngModel)]="pessoa.idiomas"></textarea>
+                                    </mz-textarea-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+
+                            <!-- OBJETIVOS -->
+                            <mz-collapsible-item>
+                                <mz-collapsible-item-header>
+                                    <i class="material-icons">
+                                        call_split
+                                    </i>
+                                    <span class="vertical-align-super">OBJETIVOS:</span>
+                                </mz-collapsible-item-header>
+                                <mz-collapsible-item-body>
+                                    <mz-textarea-container>
+                                        <textarea mz-textarea name="objetivos"
+                                            [label]="'Quais São Seus Objetivos Profissionais?'" id="objetivos"
+                                            length="500" [(ngModel)]="pessoa.objetivos"></textarea>
+                                    </mz-textarea-container>
+                                </mz-collapsible-item-body>
+                            </mz-collapsible-item>
+                        </mz-collapsible>
+
+
+                    </form>
+                    <div class="card-content"></div>
+                    <div class="right-align">
+                        <button mz-button (click)="cancelar()">
+                            cancelar
+                        </button>
+                        <button mz-button (click)="salvar()">
+                            salvar
+                        </button>
+                    </div>
+        </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">BUSINESS GROUP</h5>
+                <p class="grey-text text-lighten-4">Trabalhe em uma empresa com anos de mercado, e tenha uma
+                    carreira promissora!.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">CONTATOS</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">SAC: 0800-999999</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">RH: (46)3220-0001</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">E-MAIL: RH@BUSINESSGROUP.COM.BR</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © AVALIACAO INTERFACE RAFAEL QUADRA 2019
+            <a class="grey-text text-lighten-4 right" href="#!">6º Período</a>
+        </div>
+    </div>
+</footer>
